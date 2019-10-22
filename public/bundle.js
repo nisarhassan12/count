@@ -299,32 +299,39 @@ var app = (function () {
     const file = "src/App.svelte";
 
     function create_fragment(ctx) {
-    	var h1, t0, t1, t2, div, button0, t4, button1, t6, button2, dispose;
+    	var h1, span0, t1, span1, t2, t3, div, button0, t5, button1, t7, button2, dispose;
 
     	const block = {
     		c: function create() {
     			h1 = element("h1");
-    			t0 = text("Count: ");
-    			t1 = text(ctx.count);
-    			t2 = space();
+    			span0 = element("span");
+    			span0.textContent = "Count:";
+    			t1 = text("\n   \n  ");
+    			span1 = element("span");
+    			t2 = text(ctx.count);
+    			t3 = space();
     			div = element("div");
     			button0 = element("button");
     			button0.textContent = "+1";
-    			t4 = space();
+    			t5 = space();
     			button1 = element("button");
     			button1.textContent = "-1";
-    			t6 = space();
+    			t7 = space();
     			button2 = element("button");
     			button2.textContent = "Reset";
-    			attr_dev(h1, "class", "svelte-2t18vs");
-    			add_location(h1, file, 20, 0, 276);
-    			attr_dev(button0, "class", "svelte-2t18vs");
-    			add_location(button0, file, 23, 2, 309);
-    			attr_dev(button1, "class", "svelte-2t18vs");
-    			add_location(button1, file, 24, 2, 361);
-    			attr_dev(button2, "class", "svelte-2t18vs");
-    			add_location(button2, file, 25, 2, 413);
-    			add_location(div, file, 22, 0, 301);
+    			attr_dev(span0, "class", "svelte-rquo2i");
+    			add_location(span0, file, 44, 2, 715);
+    			attr_dev(span1, "class", "svelte-rquo2i");
+    			add_location(span1, file, 46, 2, 746);
+    			attr_dev(h1, "class", "svelte-rquo2i");
+    			add_location(h1, file, 43, 0, 708);
+    			attr_dev(button0, "class", "svelte-rquo2i");
+    			add_location(button0, file, 50, 2, 782);
+    			attr_dev(button1, "class", "svelte-rquo2i");
+    			add_location(button1, file, 51, 2, 834);
+    			attr_dev(button2, "class", "svelte-rquo2i");
+    			add_location(button2, file, 52, 2, 886);
+    			add_location(div, file, 49, 0, 774);
 
     			dispose = [
     				listen_dev(button0, "click", ctx.click_handler),
@@ -339,20 +346,22 @@ var app = (function () {
 
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
-    			append_dev(h1, t0);
+    			append_dev(h1, span0);
     			append_dev(h1, t1);
-    			insert_dev(target, t2, anchor);
+    			append_dev(h1, span1);
+    			append_dev(span1, t2);
+    			insert_dev(target, t3, anchor);
     			insert_dev(target, div, anchor);
     			append_dev(div, button0);
-    			append_dev(div, t4);
+    			append_dev(div, t5);
     			append_dev(div, button1);
-    			append_dev(div, t6);
+    			append_dev(div, t7);
     			append_dev(div, button2);
     		},
 
     		p: function update(changed, ctx) {
     			if (changed.count) {
-    				set_data_dev(t1, ctx.count);
+    				set_data_dev(t2, ctx.count);
     			}
     		},
 
@@ -362,7 +371,7 @@ var app = (function () {
     		d: function destroy(detaching) {
     			if (detaching) {
     				detach_dev(h1);
-    				detach_dev(t2);
+    				detach_dev(t3);
     				detach_dev(div);
     			}
 
@@ -374,7 +383,7 @@ var app = (function () {
     }
 
     function instance($$self, $$props, $$invalidate) {
-    	let count = 0;
+    	let count = 10;
 
     	const click_handler = () => ($$invalidate('count', count += 1));
 

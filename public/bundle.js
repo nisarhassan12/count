@@ -319,19 +319,19 @@ var app = (function () {
     			t7 = space();
     			button2 = element("button");
     			button2.textContent = "Reset";
-    			attr_dev(span0, "class", "svelte-rquo2i");
-    			add_location(span0, file, 44, 2, 715);
-    			attr_dev(span1, "class", "svelte-rquo2i");
-    			add_location(span1, file, 46, 2, 746);
-    			attr_dev(h1, "class", "svelte-rquo2i");
-    			add_location(h1, file, 43, 0, 708);
-    			attr_dev(button0, "class", "svelte-rquo2i");
-    			add_location(button0, file, 50, 2, 782);
-    			attr_dev(button1, "class", "svelte-rquo2i");
-    			add_location(button1, file, 51, 2, 834);
-    			attr_dev(button2, "class", "svelte-rquo2i");
-    			add_location(button2, file, 52, 2, 886);
-    			add_location(div, file, 49, 0, 774);
+    			attr_dev(span0, "class", "svelte-299em");
+    			add_location(span0, file, 44, 2, 723);
+    			attr_dev(span1, "class", "svelte-299em");
+    			add_location(span1, file, 46, 2, 754);
+    			attr_dev(h1, "class", "svelte-299em");
+    			add_location(h1, file, 43, 0, 716);
+    			attr_dev(button0, "class", "svelte-299em");
+    			add_location(button0, file, 50, 2, 790);
+    			attr_dev(button1, "class", "svelte-299em");
+    			add_location(button1, file, 51, 2, 842);
+    			attr_dev(button2, "class", "svelte-299em");
+    			add_location(button2, file, 52, 2, 894);
+    			add_location(div, file, 49, 0, 782);
 
     			dispose = [
     				listen_dev(button0, "click", ctx.click_handler),
